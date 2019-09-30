@@ -3,10 +3,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
       e.preventDefault();
 
       let textarea = document.getElementById('summernote').value;
-      let running;
-      running = textarea.split(' ');
-      let run = running.length;
-      console.log(alert(run));
+      let wordMsg = document.getElementById('word');
+      let charMsg = document.getElementById('character');
+      let characterCount;
+      let wordCount;
+
+
+      characterCount = textarea.length;
+      charMsg.innerHTML = characterCount;
+      wordCount = textarea.split(' ');
+      word.innerHTML = wordCount.length;
+      
     }
     document.getElementById('regForm').addEventListener('submit', reg, false);
 });
