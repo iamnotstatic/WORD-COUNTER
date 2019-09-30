@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word counter</title>
+  <!-- Boostrap scripts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- summernote scripts -->
+  <script type="text/javascript" src="main.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+</head>
+<body>
+  <!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand font-weight-bold" href="#">
+    WORD COUNTER
+  </a>
+</nav>
+<div class="container">
+    <form id="regForm" action="processing.php" method="POST">
+      <div class="form-group">
+         <textarea id="summernote" height="300">Hello </textarea>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-info btn-lg w-25">Click</button>
+      </div>
+    </form>
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <div class="card text-center">
+      <div class="card-header font-weight-bold">
+        WORD
+      </div>
+      <div class="card-body">
+        
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-center">
+      <div class="card-header font-weight-bold">
+        CHARACTERS
+      </div>
+      <div class="card-body">
+    
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+          height: 200,
+        });
+    });
+  </script>
+  </div>
+</body>
+</html>
