@@ -8,11 +8,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let characterCount;
       let wordCount;
 
-
       characterCount = textarea.length;
       charMsg.innerHTML = characterCount;
+
       wordCount = textarea.split(' ');
-      word.innerHTML = wordCount.length;
+      checkWord = wordCount.length;
+      if (checkWord === 1) {
+      	 word.innerHTML = 0;
+      } else{
+      	 word.innerHTML = checkWord;
+      }
       
     }
     document.getElementById('regForm').addEventListener('submit', reg, false);

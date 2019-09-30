@@ -16,14 +16,12 @@
 <body>
   <!-- Just an image -->
 <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand font-weight-bold" href="#">
-    WORD COUNTER
-  </a>
+    <img src="logo.png" alt="Logo" width="200px">
 </nav>
 <div class="container">
     <form id="regForm" action="processing.php" method="POST">
       <div class="form-group">
-         <textarea id="summernote" height="300"></textarea>
+         <textarea id="summernote" class="form-control" rows="15" placeholder="Paste your word here"></textarea>
       </div>
       <div class="text-center">
         <button class="btn btn-info btn-lg w-25">Click</button>
@@ -52,14 +50,17 @@
     </div>
   </div>
 
-  <script>
+<!--   <script>
     $(document).ready(function() {
         $('#summernote').summernote({
-          height: 200,
+          height: 230,
         });
     });
-  </script>
+  </script> -->
     <script type="text/javascript" src="main.js"></script>
   </div>
+  <footer class="bg-light p-3 mt-5 text-center">
+    <p>Copyright &copy; 2019</p>
+  </footer>
 </body>
 </html>
