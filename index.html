@@ -1,66 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Word counter</title>
-  <!-- Boostrap scripts -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- summernote scripts -->
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+  <title>Word Counter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <!-- Just an image -->
-<nav class="navbar navbar-light bg-light">
-    <img src="logo.png" alt="Logo" width="200px">
-</nav>
-<div class="container">
-    <form id="regForm" action="processing.php" method="POST">
-      <div class="form-group">
-         <textarea id="summernote" class="form-control" rows="15" placeholder="Paste your word here"></textarea>
-      </div>
-      <div class="text-center">
-        <button class="btn btn-info btn-lg w-25">Click</button>
-      </div>
-    </form>
-  <div class="row">
-    <div class="col-md-6 mt-5">
-      <div class="card text-center">
-      <div class="card-header font-weight-bold">
-        WORDS
-      </div>
-      <div class="card-body">
-        <h2 id="word" class="font-weight-bold"></h2>
-      </div>
-    </div>
-    </div>
-    <div class="col-md-6 mt-5">
-      <div class="card text-center">
-      <div class="card-header font-weight-bold">
-        CHARACTERS
-      </div>
-      <div class="card-body">
-        <h2 id="character" class="font-weight-bold"></h2>
-    </div>
-    </div>
-    </div>
+  <div class="container">
+  <img src="logo.png" alt="Logo">
+  <textarea placeholder="Start typing, or copy and paste your document here..."></textarea>
+  <div class="output row">
+    <div>Characters: <span id="characterCount">0</span></div>
+    <div>Words: <span id="wordCount">0</span></div>
   </div>
-
-<!--   <script>
-    $(document).ready(function() {
-        $('#summernote').summernote({
-          height: 230,
-        });
-    });
-  </script> -->
-    <script type="text/javascript" src="main.js"></script>
+  <div class="output row">
+    <div>Sentences: <span id="sentenceCount">0</span></div>
+    <div>Paragraphs: <span id="paragraphCount">0</span></div>
   </div>
-  <footer class="bg-light p-3 mt-5 text-center">
-    <p>Copyright &copy; 2019</p>
-  </footer>
+  <div class="output row">
+    <div>Reading Time: <span id="readingTime">0</span></div>
+    <div id="readability">Show readability score.</div>
+  </div>
+  <div class="keywords">
+    Top keywords:
+    <ul id="topKeywords">
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
