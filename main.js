@@ -51,7 +51,7 @@ input.addEventListener('keyup', function() {
     sentenceCount.innerHTML = 0;
   }
 
-  // paragraph count from http://stackoverflow.com/a/3336537
+  
   if (words) {
     // \n$ takes care of empty lines: lines with no characters, and only \n are not paragraphs
     // and need to be replaced with empty string
