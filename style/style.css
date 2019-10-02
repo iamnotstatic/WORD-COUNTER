@@ -85,21 +85,6 @@ textarea:focus {
   font-size: 1.5rem;
 }
 
-#readability {
-  width: 52%;
-  font-weight: bold;
-}
-
-#readability:hover {
-  background-color: #4D90FE;
-  color: #FFF;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-#readability:active {
-  background-color: #307AF3;
-}
 
 .keywords {
   display: none;
@@ -123,6 +108,26 @@ textarea:focus {
   margin: 1%;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+}
+
+footer #copy{
+  width: 50%;
+  font-weight: bold;
+  margin: 0px 150px 0 35px;
+}
+
+footer #git{
+  width: 50%;
+  font-weight: bold;
+  margin: 0px 0px 0 200px;
+}
+
+footer #git a{
+  text-decoration: none;
+}
 
 /* 
 ** Making it responsive
