@@ -1,6 +1,6 @@
 # WORD COUNTER
 
-<img src="/style/img/word-counter">
+<img src="/style/img/word-counter.png">
 <a href="https://thirsty-bassi-06b21e.netlify.com/">Website</a>
 
 ### Author
